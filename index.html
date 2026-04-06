@@ -5,23 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi primera web</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    header {
+      background: #1f3c88;
+      color: white;
       text-align: center;
-      padding: 50px;
-      background: #f4f4f4;
+      padding: 60px 20px;
     }
-    h1 {
-      color: #1f3c88;
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
     }
-    p {
-      color: #333;
+
+    header p {
+      margin-top: 12px;
       font-size: 18px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .caja {
+      background: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #1f3c88;
+      margin-top: 0;
+    }
+
+    .boton {
+      display: inline-block;
+      background: #1f3c88;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .boton:hover {
+      background: #16306c;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenido a mi web</h1>
-  <p>La he publicado gratis con GitHub Pages.</p>
+
+  <header>
+    <h1>Bienvenido a mi web</h1>
+    <p>Mi primera página publicada gratis con GitHub Pages</p>
+  </header>
+
+  <main>
+    <div class="caja">
+      <h2>Sobre mí</h2>
+      <p>Esta es mi primera web. La estoy creando para aprender a publicar páginas gratis en internet.</p>
+      <a href="#" class="boton">Ver más</a>
+    </div>
+
+    <div class="caja">
+      <h2>Mis proyectos</h2>
+      <p>Aquí podré enseñar mis trabajos, prácticas, proyectos personales o información de mi club.</p>
+    </div>
+
+    <div class="caja">
+      <h2>Contacto</h2>
+      <p>Aquí podré añadir mi correo o redes sociales más adelante.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 - Mi web</p>
+  </footer>
+
 </body>
 </html>
